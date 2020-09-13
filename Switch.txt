@@ -1,0 +1,60 @@
+#include <stdio.h>
+int add();
+int sub();
+int mul();
+int div();
+
+int add(){
+    int a;
+    int b;
+    printf("Enter numbers to add: \n");
+    scanf("%d  %d" , &a ,&b);
+    return (a+b);
+}
+
+int div(){
+    int a;
+    int b;
+    printf("Enter numbers to div: \n");
+    scanf("%d  %d" , &a ,&b);
+    return (a/b);
+}
+int mul(){
+    int a;
+    int b;
+    printf("Enter numbers to mul: \n");
+    scanf("%d  %d" , &a ,&b);
+    return (a*b);
+}
+int sub(){
+    int a;
+    int b;
+    printf("Enter numbers to sub: \n");
+    scanf("%d  %d" , &a ,&b);
+    return (a-b);
+}
+
+int main(){
+    int operation;
+    printf("Enter number to perform the operations:\n");
+    scanf("%d" , &operation);
+    
+        switch(operation){
+            case 1:
+            
+            printf("Addition is: %d" , add());
+            break;
+        
+        case 2:
+        printf("Substraction is: %d" , sub());
+        
+        break;
+        
+        case 3:
+        printf("Multiplication is: %d" , sub());
+        break;
+        case 4:
+        printf("Division is: %d" , sub());
+        break;
+    }
+}
