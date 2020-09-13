@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+
+int main (){
+    int a;
+    int b;
+    printf("Conditional operation.\n");
+    scanf("%d %d" , &a,&b);
+    printf( a>0>b?"B is negative integer.\n":"B is positive number.\n");
+    printf( a==b?"A & B are equal.":"A & B are not equal.\n");
+    printf(a<b?"B is big":"A is big\n");
+
+return 0;
+    
+}
