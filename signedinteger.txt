@@ -1,0 +1,26 @@
+#include <stdio.h>
+void bigger_number();
+
+int main(){
+    
+    bigger_number();
+    return 0;
+}
+void bigger_number(){
+    int a;
+    
+    printf("Enter number:\n");
+    scanf("%d" , &a);
+    if(a==0)
+    {
+        printf("Number is 0.");
+
+    }
+    else if(a<0){
+        
+        printf("A is negative.");
+    }
+    else{
+        printf("A is positive number..");
+}
+}
