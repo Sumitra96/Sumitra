@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(){
+    int i;
+    int table;
+   printf("Enter number:");
+    scanf("%d" , &i);
+    printf("Table of number %d \n", i);
+    
+    for(int j=1;j<=10;j++){
+        
+    table=i*j;
+    printf(" %d \n" , table );
+    }
+    return 0;
+}
