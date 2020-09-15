@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+int main(){
+    
+    int a;
+    int b=10;
+    int mul;
+    
+    printf("Enter number to see the table:");
+    scanf("%d" , &a);
+    printf("Table of %d is \n", a);
+    
+    while(b>=1){
+        
+        mul=a*b;
+       
+    printf("%d \n" , mul);
+    
+        b--;
+    
+    }
+    
+    return 0;
+}

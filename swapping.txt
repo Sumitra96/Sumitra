@@ -1,0 +1,21 @@
+#include <stdio.h>
+ 
+int main(){
+    
+    int s;
+    int sr;
+    int temp;
+    
+    printf("type two numbers to exchange. \n");
+    scanf("%d %d" , &s , &sr);
+    printf("Before swaping %d  %d \n" , s ,sr);
+    
+    temp=s;
+    s=sr;
+    sr=temp;
+    
+    printf("After swaping  %d %d \n" , s ,sr);
+    
+ return 0;
+ 
+ }
