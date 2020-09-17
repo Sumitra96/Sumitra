@@ -1,0 +1,97 @@
+#include <stdio.h>
+
+int add();
+int sub();
+int mul();
+int div();
+int a;
+int b;
+int add(){
+
+    
+    printf("Enter numbers to add: \n");
+    scanf("%d  %d" , &a ,&b);
+    return (a+b);
+}
+
+int div(){
+
+    printf("Enter numbers to div: \n");
+    scanf("%d  %d" , &a ,&b);
+    return (a/b);
+}
+
+int mul(){
+
+    printf("Enter numbers to mul: \n");
+    scanf("%d  %d" , &a ,&b);
+    return (a*b);
+}
+
+int sub(){
+
+    printf("Enter numbers to sub: \n");
+    scanf("%d  %d" , &a ,&b);
+    return (a-b);
+}
+
+int main(){
+
+    char ca;
+    int results[5];
+    char operators;
+    char op[4];
+    int i;
+    char j;
+    do{
+    
+    printf("Enter operator to perform the operations:\n");
+    scanf("%c" , &operators);
+    
+        switch(operators){
+        case 1:
+            if(operators=='+'){
+            results[i]=add();
+            op[j]=operators;
+            }
+            break;
+        
+        case 2:
+
+            if(operators=='-'){
+            results[i]=sub();
+            op[j]=operators;
+            }
+            break;
+        
+        case 3:
+
+            if(operators=='*'){
+            results[i]=mul();
+            op[j]=operators;
+            }
+            break;
+
+        case 4:
+
+           if(operators=='/'){
+            results[i]=add();
+            op[j]=operators;
+            }
+            break;
+        
+        default:
+        printf("Invalid operator");
+        
+        }
+        
+        printf("Would you like continue:(y/n)");
+        scanf(" %c" , &ca);
+        
+    } while(ca=='y');
+    
+    for(int k=0; k<i;k++){
+        
+        printf("%d %c %d = %d" , a , op[j] , b , results[i]);
+    }
+}
