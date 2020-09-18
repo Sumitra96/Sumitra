@@ -46,7 +46,7 @@ int main(){
     do{
     
     printf("Enter operator to perform the operations:\n");
-    scanf("%c" , &operators);
+    scanf(" %c" , &operators);
     
         switch(operators){
         case '+':
@@ -58,22 +58,25 @@ int main(){
             break;
         
         case '-':
-
-            results[i]=sub();
+        
+            i=sub();
+            results[i]=i;
             op[j]=operators;
             
             break;
         
         case '*':
-
-            results[i]=mul();
+        
+            i=mul();
+            results[i]+=i;
             op[j]=operators;
             
             break;
 
         case '/':
-
-            results[i]=div();
+        
+            i=div();
+            results[i]+=i;
             op[j]=operators;
             
             break;
