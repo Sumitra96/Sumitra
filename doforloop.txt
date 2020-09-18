@@ -49,37 +49,35 @@ int main(){
     scanf("%c" , &operators);
     
         switch(operators){
-        case 1:
-            if(operators=='+'){
-            results[i]=add();
+        case '+':
+            
+            i=add();
+            results[i]=i;
             op[j]=operators;
-            }
+            
             break;
         
-        case 2:
+        case '-':
 
-            if(operators=='-'){
             results[i]=sub();
             op[j]=operators;
-            }
+            
             break;
         
-        case 3:
+        case '*':
 
-            if(operators=='*'){
             results[i]=mul();
             op[j]=operators;
-            }
+            
             break;
 
-        case 4:
+        case '/':
 
-           if(operators=='/'){
-            results[i]=add();
+            results[i]=div();
             op[j]=operators;
-            }
+            
             break;
-        
+    
         default:
         printf("Invalid operator");
         
@@ -92,6 +90,6 @@ int main(){
     
     for(int k=0; k<i;k++){
         
-        printf("%d %c %d = %d" , a , op[j] , b , results[i]);
+        printf("%d %c %d = %d \n" , a , op[j] , b , results[i]);
     }
 }
