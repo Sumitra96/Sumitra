@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(){
+    
+    int cells;
+    int boxes;
+    
+    printf("Enter the cells: ");
+    scanf("%d" , &cells);
+    
+    boxes=cells/3;
+    
+    printf("No.of 3*1 boxes can be added: %d" , boxes);
+    return 0;
+}
