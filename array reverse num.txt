@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(){
+    
+    int array[5];
+    
+    printf("Enter numbers to see reverse of it:");
+    
+    for(int i=4;i>=0;i--){
+        
+        scanf("%d" , &array[i]);
+    }
+    
+    printf("Reverse order of array:");
+    
+    for(int i=0;i<5;i++){
+        
+     printf("%d \n", array[i]);
+       
+    }
+
+    return 0;
+}

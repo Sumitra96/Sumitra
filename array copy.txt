@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main(){
+    
+    int array[5];
+    int copy[5];
+    
+    
+    printf("Enter numbers to store in array:");
+    
+    for(int i=0;i<5;i++){
+        
+        scanf("%d" , &array[i]);
+        copy[i]=array[i];
+    }
+    
+    printf("Copy of array:");
+    
+    for(int i=0;i<5;i++){
+        
+    printf("%d \n", copy[i]);
+       
+    }
+
+    return 0;
+}
