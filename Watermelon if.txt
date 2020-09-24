@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main(){
+    
+    int num; char ch;
+    
+    do{
+    
+    printf("Enter weight of watermelon:");
+    scanf("%d" , &num);
+    
+    if(num<4){
+        printf("No \n");
+    }else if(num%2==0){
+        printf("Yes \n");
+    }else {
+        printf("No \n");
+    }
+    printf("Do you have anyother watermelon:(Y/N)");
+    scanf(" %c" , &ch);
+    
+    
+}while(ch=='y');
+
+return 0;
+
+}

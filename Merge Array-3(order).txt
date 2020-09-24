@@ -1,0 +1,71 @@
+#include <stdio.h>
+
+int main(){
+    
+    int array1[1000];
+    int array2[1000];
+    int array3[2000];
+    int i, length1, length2, length3;
+    int j=0;
+    int order[2000];
+    
+    printf("Enter length of array1:");
+    scanf("%d" , &length1);
+    
+    printf("Enter length of array2:");
+    scanf("%d" , &length2);
+    
+    length3 =length1 + length2;
+    
+    printf("Enter elements in array1:");
+    
+    for(i=0; i<length1 ; i++){
+        
+        scanf(" %d," , &array1[i]);
+        
+    }
+    
+    printf("Enter elements in array2:");
+    
+    for(i=0; i<length2 ; i++){
+        
+        scanf(" %d," , &array2[i]);
+    
+    }
+    
+    for(i=0; i<length1 ; i++){
+        
+        array3[j]=array1[i];
+        j++;
+        
+    }
+    for(i=0; i<length2; i++){
+        
+        array3[j]=array2[i];
+        j++;
+       
+    } 
+    printf("Merged array is: \n");
+    
+    for(i=0; i<length3 ; i++){
+        
+        printf(" %d " , array3[i]);
+    }
+    printf("\n Array elements in order: \n");
+    
+    for(i=0; i<length3 ; i++){
+        
+        if(array3[i]>order[j]){
+            
+            order[j]=array3[i];
+            j++;
+            
+        }
+    }
+    for(i=0; i<length3 ; i++){
+        
+        printf(" %d " , order[i]);
+    }
+    
+    return 0;
+}

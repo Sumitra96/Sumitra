@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main(){
+    
+    int num;
+    
+    scanf("%d" , &num);
+    
+    printf(num<4 ? "No" : ((num%2==0) ? "Yes" : "No"));
+}

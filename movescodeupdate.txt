@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(){
+    
+    int a;
+    int b;
+    int t;
+    
+    printf("Enter number of test cases:");
+    scanf("%d" , &t);
+    printf("%d \n" , t);
+    for(int i=0; i<t; i++){
+        
+        int moves=0;
+        scanf("%d %d" , &a , &b);
+        
+    while(a%b !=0){
+        moves++;
+        a++;
+
+} printf("Number of moves : %d \n" , moves);
+}
+}
