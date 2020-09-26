@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <math.h>
+int main(){
+    
+    long long int num;
+    scanf(" %lld" , &num);
+    
+    long long int n= (num %2 ==0 ? num/2 : -(ceil(num/2.0)));
+    
+    printf("%lld" ,n);
+    
+    return 0;
+}
